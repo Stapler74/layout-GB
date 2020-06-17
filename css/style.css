@@ -9,6 +9,8 @@
     box-sizing: border-box;
 }
 
+/*============================Header=============================*/
+
 .main-header {
     width: 100%;
     min-height: 323px;
@@ -45,7 +47,6 @@
 
 .main-header-list-item {
     margin: 0 0 3px 0;
-    font-family: Arial;
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
@@ -76,4 +77,117 @@
     height: 214px;
     background-color: #fff;
     color: black;
+}
+
+/*===========================Main===============================*/
+
+.content {
+    width: 100%;
+}
+
+/*========================About product=========================*/
+
+.about-product {
+    width: 100%;
+    min-height: 345px;
+}
+
+.about-product:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.about-product-wrp {
+    width: 660px;
+    float: left;
+}
+
+.about-product-title {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.about-product-text {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.about-product-video {
+    width: 430px;
+    height: 245px;
+    background-color: #445161;
+    float: right;
+}
+
+/*===========================Dignity===========================*/
+
+.dignity {
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dignity .dignity-title {
+    display: block;
+    margin: 0 0 29px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.dignity-item-wrp {
+    width: 50%;
+}
+
+.dignity-item {
+    width: 100%;
+    min-height: 65px;
+    margin: 0 0 30px 0;
+    padding: 0 0 0 40px;
+    box-sizing: border-box;
+}
+
+.dignity-item:last-child {
+    margin: 0;
+}
+
+.dignity-item-title {
+    /*for firefox*/
+    display: block;
+    outline: none;
+    position: relative;
+}
+
+/* for Chrome and Safari's*/
+.dignity-item-title::-webkit-details-marker {
+    display: none;
+}
+
+.dignity-item-title:before {
+    content: "+";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #445161;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 32px;
+    position: absolute;
+    top: 1px;
+    left: -40px;
 }
