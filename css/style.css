@@ -137,9 +137,9 @@
     flex-wrap: wrap;
 }
 
-.dignity .dignity-title {
+.section-title {
     display: block;
-    margin: 0 0 29px 0;
+    margin: 0 0 28px 0;
     width: 100%;
     text-align: center;
     font-size: 30px;
@@ -190,4 +190,57 @@
     position: absolute;
     top: 1px;
     left: -40px;
+}
+
+/*===========================Screenshot=======================*/
+
+.screenshot {
+    width: 100%;
+    min-height: 467px;
+    background-color: #fff;
+}
+
+.screenshot-figure-wrp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.screenshot-figure {
+    margin: 0;
+    width: 50%;
+    padding: 0 0 30px 0;
+    box-sizing: border-box;
+}
+
+.screenshot-img {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 150px;
+    background-color: #445161;
+}
+
+.screenshot-caption {
+    padding: 0 0 0 220px;
+}
+
+.screenshot-figure:nth-child(n+2) {
+    padding: 0;
+}
+
+.caption-title {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.caption-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333333;
 }
