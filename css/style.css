@@ -222,6 +222,7 @@ body {
 }
 
 .screenshot-img {
+    margin: 0 15px 0 0;
     display: block;
     float: left;
     width: 200px;
@@ -230,7 +231,7 @@ body {
 }
 
 .screenshot-caption {
-    padding: 0 0 0 220px;
+    padding: 0;
 }
 
 .caption-title {
@@ -331,7 +332,7 @@ body {
     width: 300px;
     min-height: 306px;
     margin: 0 45px 0 0;
-    padding: 16px 0 20px 0;
+    padding: 0 0 20px 0;
     box-sizing: border-box;
     background-color: #445161;
     border: 1px solid #445161;
@@ -345,7 +346,9 @@ body {
 .price-item-title {
     display: block;
     width: 100%;
-    margin: 0 0 16px 0;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
     text-align: center;
     font-size: 24px;
     line-height: 30px;
@@ -361,7 +364,7 @@ body {
     line-height: 30px;
     font-weight: 400;
     color: #445162;
-    padding: 18px 0;
+    padding: 18px;
     margin: 0 0 20px 0;
     box-sizing: border-box;
 }
@@ -404,3 +407,174 @@ body {
 }
 
 /*=============================Footer===========================*/
+
+.main-footer {
+    width: 100%;
+    min-height: 530px;
+}
+
+.main-footer-contacts {
+    width: 100%;
+    background-color: #445161;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-title {
+    color: #fff;
+}
+
+.main-footer-form {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 46px;
+}
+
+.main-footer-form input[type="text"],
+.main-footer-form input[type="email"],
+.main-footer-form textarea {
+    width: 100%;
+    height: 40px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-transform: capitalize;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid white;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
+.main-footer-form textarea {
+    height: 170px;
+    resize: none;
+}
+
+.main-footer-form input[type="text"]:hover,
+.main-footer-form input[type="email"]:hover,
+.main-footer-form textarea:hover {
+    background-color: #ebebeb;
+}
+
+input[placeholder],
+textarea[placeholder] {
+    text-overflow: ellipsis;
+    text-align: left;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.main-footer-form input[type="submit"] {
+    width: 140px;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #445162;
+    outline: none;
+    cursor: pointer;
+}
+
+.main-footer-form input[type="submit"]:hover {
+    background-color: #445161;
+    color: #fff;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.main-footer-form input[type="submit"]:active {
+    background-color: #fff;
+    color: #445161;
+}
+
+.main-footer-net-wrp {
+    width: 240px;
+}
+
+.main-footer-net {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.main-footer-net::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: -2px;
+}
+
+.main-footer-net:nth-of-type(1):before {
+    background-image: url(../img/skypeIcon.png);
+}
+
+.main-footer-net:nth-of-type(2):before {
+    background-image: url(../img/icqIcon.png);
+}
+
+.main-footer-net:nth-of-type(3):before {
+    background-image: url(../img/email_icon.png);
+}
+
+.main-footer-net:nth-of-type(4):before {
+    background-image: url(../img/phoneIcon.png);
+}
+
+.main-footer-net:last-of-type {
+    margin-bottom: 32px;
+}
+
+.main-footer-net-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-footer-net-icon-link {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #445161;
+    background-color: #fff;
+    text-align: center
+}
+
+.copyright {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #445162;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #445162;
+    background-color: #f5f5f5;
+
+}
