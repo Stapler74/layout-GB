@@ -1,1 +1,2 @@
-# repo-GH
+# Simple layout
+html5 semantic layout
